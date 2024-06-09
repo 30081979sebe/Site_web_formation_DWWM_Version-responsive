@@ -1,0 +1,413 @@
+                                            /* contenu header commune a toutes les pages */
+* {
+  box-sizing: border-box;
+}
+.main-nav {
+    background-color: #44A33D;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    overflow: hidden;
+    width: 100%;
+}
+
+.logo {
+    flex: 1;
+    max-width: 150px;
+    margin-right:5px;
+    float: left;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-nav {
+    flex: 3;
+    text-align: right;
+    background-color: #44A33D;
+    float: right;
+    margin-top: -10px;
+}
+
+.main-nav > ul {
+    list-style: none; /* Supprimer les puces */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start; /* Aligner les éléments sur la même ligne */
+}
+
+.main-nav > ul > li {
+    margin: 0;
+    border-right: 1px solid white; /* Bordure de séparation blanche */
+    display: flex; /* Pour aligner les liens à l'intérieur du li */
+    align-items: center;
+}
+
+.main-nav > ul > li:last-child {
+    border-right: none; /* Supprimer la bordure du dernier élément */
+}
+
+.main-nav > ul > li > a {
+    text-decoration: none; 
+    color: white; 
+    background-color: #87BB34; 
+    padding: 10px 20px; 
+    display: block; 
+}
+                                        /* contenu page acceuil */
+.content {
+    position: relative;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction:column ;
+    background: url('/Images/A2-1920.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 20px;
+    clear: both; 
+}
+
+.overlay {
+    display: flex;
+    background-color: rgba(98, 101, 113, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    height: 90%;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    justify-content: space-evenly;
+}
+
+.content h1,
+.overlay h2 {
+    margin: 10px 0;
+}
+
+.cta-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: red; 
+    color: white; 
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: medium;
+    text-transform: uppercase;
+    width: 40%;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #76a329; /* Couleur de fond du bouton au survol */
+}
+h1{
+    display: flex;
+    background-color: #44A33D;
+    width: 50%;
+    color: rgb(248, 250, 252);
+    border-radius: 30px;
+    font-size: medium;
+    height: 44px;
+    text-align: center;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+h2{
+    display: flex;
+    background-color: #44A33D;
+    width: 40%;
+    height: 20%;
+    color: aliceblue;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+
+}
+
+                                    /* Partie La Formation*/
+
+.main {
+    padding: 40px;
+    background: url('/Images/A2-1920.jpg') no-repeat center center fixed;
+    background-size: cover;
+    
+
+}
+                                    
+.conteneur {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 2px;
+    font-size: 20rem; 
+    width: 50%;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: medium;
+
+}
+.container_LaFormation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+                                    
+.colFormation {
+    background-color: #7a99ac; 
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(98, 101, 113, 0.9); 
+    flex: 1 1 45%; /* Permet de prendre la moitié de la largeur disponible */
+    min-width: 350px; 
+ }
+.rubriqueFormation {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 10PX;
+    border-color: #ef4a81;
+}
+.rubriqueFormation-Titre {
+    font-size: 1.0rem; 
+    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff; 
+    border: solid;
+    border-color: #44A33D;
+    border-radius: 10px;
+    background-color: #44A33D;
+    text-align: center;
+    width: 45%;
+
+    
+}
+                                    
+.rubriqueFormation-Description {
+    color: #ffffff;
+    justify-content: center;
+    font-weight: bold;
+}
+.rubriqueFormation-Description p {
+    margin-bottom: 16px; 
+    color: #ffffff;
+    margin-right: auto;
+    margin-left:auto;
+    text-align: justify;
+    
+}
+P{
+    color: #ffffff;
+    text-align: justify;
+    margin-right: auto;
+    margin-left: 4%;
+    font-weight: bold;
+    width: 90%;
+
+}
+                                         /* Partie temoignages*/
+
+.temoignages{
+    display:flex;
+    flex: 1 1 1 45%;
+    padding: 20px;
+}
+.carte-temoignage{
+    background-color: #7a99ac; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(#7a99ac, 0.9);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    flex: 1 1 30%;
+    max-width: 300px;
+    margin: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.carte-temoignage-photo {
+    width: 150px; 
+    height: 150px; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+    border: solid;
+    border-color: #440099;
+}
+.carte-temoignage-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 10px;
+    background-color: white;
+}
+.carte-temoignage-nom{
+    background-color: #44A33D;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: 80%;
+    color: #ffffff;
+}
+.carte-temoignage-fonction, .carte-temoignage-entreprise{
+    color: #440099;
+    font-size: large;
+}
+.carte-temoignage-message{
+    color: #ffffff;
+    justify-content: center;
+    text-align: justify;
+    margin-top: 20px;
+    
+}
+                                        /* Partie Nos references*/
+
+.main_References{
+    width: 100%;
+    align-items: center;
+    background: url('/Images/A2-1920.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    padding: 20px;
+}
+.gallery> img{
+    width: 15%;
+    height: 15%;
+    margin: auto;
+    padding: 15px;
+
+}
+.gallery{
+    background-color: #44a33dd2;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(#7a99ac, 0.9);
+    justify-content: space-between;
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+                                    /*Partie contact*/
+.gpFormulaire{
+    display: flex;
+    flex-direction: row;
+}
+
+                                    /* Partie responsive*/
+@media (max-width: 960px) {
+    header{
+        flex-direction: column;
+    }
+    h1{
+        width: 50%;
+        font-size: medium;
+        height: 44px;
+    }
+    h2{
+        width: auto;
+        height: 14%;
+        font-size: small;
+        border: none;
+    }
+    .carte-temoignage{
+        margin-left: 13px;
+    }
+    .logo{
+        margin-bottom: 26px;
+    }
+}
+
+@media (max-width: 560px) {
+
+    /* Partie responsive Nav_Bar*/
+
+    .logo{
+        padding: 20px;
+        margin-left: 8%;
+    }
+    header{
+        flex-direction: column;
+        padding: 0px;
+        flex-wrap: wrap;
+
+    }
+    .main-nav{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        align-content: stretch;
+
+    }
+    .main-nav > ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+    .main-nav > ul > li {
+        align-items: center;
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+    /* Partie responsive contenue des pages*/
+    h1{
+        width: 100%;
+        font-size: small;
+    }
+    h2{
+        width: 78%;
+        height: 14%;
+        font-size: small;
+        border: none;
+    }
+    .cta-button{
+        width: 68%;
+        font-size: small;
+    }
+    .temoignages{
+        flex-direction: column;
+    }
+    .conteneur{
+        font-size: x-small;
+        width: 100%;
+    }
+    .gallery>img{
+        width: 50%;
+    }
+}
