@@ -324,6 +324,91 @@ P{
 .gpFormulaire{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    margin: 5px;
+}
+
+form{
+    background-color: #7a99ac;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+.Nom{
+    width: 100%;
+}
+#de{
+
+}
+.email{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.gpFormulaire > input{
+    width: 100%;
+    margin-left: -40px;
+}
+.label{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px;
+    justify-content: space-between;
+    padding: 10px;
+    color: #ffffff;
+}
+.label > label{
+
+}
+.Label_2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px;
+    justify-content: space-between;
+    padding: 10px;
+    color: #ffffff; 
+}
+#region{
+    width: 101%;
+    display: flex;
+    margin-right: -6%;
+}
+.Label_3{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    color: #ffffff;
+    margin: 28px;
+}
+.gpFormulaire> label {
+    width: 306px;
+    display: flex;
+    color: white;
+    justify-content: flex-start;
+    font-size: large;
+    margin-right: 10px;
+}
+
+.button{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: #44A33D;
+}
+
+#message{
+    display: flex;
+    width: 500px;
+    height: 161px;
+    color: white;
+}
+#message_2{
+    width: 100%;
 }
 
                                     /* Partie responsive*/
@@ -409,5 +494,59 @@ P{
     }
     .gallery>img{
         width: 50%;
+    }
+    .gpFormulaire{
+        display: flex;
+        margin: 7px;
+        width: 70%;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+    .label{
+        display: flex;
+        flex-direction: row;
+        margin: 5px;
+        padding: 20px;
+        color: #ffffff;
+        flex-wrap: wrap;
+        width: 75%;
+        margin-right: auto;
+    }
+    .Label_2{
+        display: flex;
+        flex-direction: row;
+        margin: 5px;
+        padding: 20px;
+        color: #ffffff;
+        flex-wrap: wrap;
+        width: 75%;
+        margin-right: auto;
+    }
+    .Label_3{
+        display: flex;
+        flex-direction: row;
+        margin: 5px;
+        padding: 20px;
+        color: #ffffff;
+        flex-wrap: wrap;
+        width: 75%;
+        margin-right: auto;
+    }
+    #message_2{
+        width: 68%;
+    }
+    #message {
+        display: flex;
+        width: 500px;
+        height: 161px;
+        color: white;
+        flex-direction: column;
+    }
+    .button{
+        margin-right: auto;
+        margin-left: 38%;
+        margin-top: 10px;
     }
 }
